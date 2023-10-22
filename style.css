@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right top,
+    #051937,
+    #16294f,
+    #273a68,
+    #394c82,
+    #4c5e9d
+  );
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.to-do {
+  width: 100%;
+  max-width: 540px;
+  padding: 40px 30px 70px;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 2rem;
+  background-color: #242445;
+}
+.title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.title i {
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  width: 95%;
+}
+input {
+  width: 350px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: #000000;
+  background-color: transparent;
+  padding: 12px;
+  font-size: 17px;
+  padding-left: 20px;
+}
+button {
+  cursor: pointer;
+  padding: 14px 40px;
+  background-color: rgb(46, 42, 91);
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.25s ease;
+}
+button:hover {
+  filter: brightness(100%);
+}
+button:active {
+  filter: brightness(120%);
+}
+
+button {
+  filter: brightness(0.8);
+}
+
+ul li {
+  gap: 10%;
+  list-style: none;
+  font-size: 25px;
+  padding: 12px 8px 5px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.deleteButton {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: rgb(46, 42, 91);
+  outline: none;
+  border: solid;
+  border-color: white;
+  cursor: pointer;
+}
+.checked {
+  text-decoration: line-through;
+}
+@media screen and (max-width: 400px) {
+  button {
+    padding: 15px;
+    border-radius: 0 30px 30px 0;
+  }
+}
